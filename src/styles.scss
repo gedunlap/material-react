@@ -1,0 +1,12 @@
+.nav {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navimg {
+        img {
+            height: 50px;
+        }
+    }
+}
