@@ -1,15 +1,28 @@
 .nav {
-
+    display: flex;
     .navleft {
         width: 50vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
         .navimg {
             img {
                 height: 50px;
             }
+        }
+    }
+    .navright {
+        width: 50vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
         }
     }
     

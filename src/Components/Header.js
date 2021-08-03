@@ -20,6 +20,11 @@ function Header(props){
                     <div>Location</div>
                 </Link>
             </div>
+            <div className="navright">
+                <Link to="/" className="navaptmt">
+                    <button>BOOK APPOINTMENTS</button>
+                </Link>
+            </div>
         </nav>
     )
   } 
