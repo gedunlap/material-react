@@ -1,3 +1,8 @@
+body {
+    padding: 5%;
+    border: solid;
+}
+
 .nav {
     display: flex;
     .navleft {
@@ -15,7 +20,7 @@
     .navright {
         width: 50vw;
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
         align-items: center;
 
         button {
@@ -24,6 +29,29 @@
             background-color: black;
             color: white;
         }
+
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    .navitem {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+
+    .navitem:hover {
+        color: gray;
+        font-size: 22px;
     }
     
+}
+
+.locationpg {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
