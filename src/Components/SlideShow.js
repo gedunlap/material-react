@@ -46,19 +46,21 @@ function SlideShow(props){
         }
     }, [index])
 
+
     return (
         <div className="slideshow">
             <div className="slideshowSlider" style={{transform: `translate3d(${-index * 100}%, 0, 0)`}}>
                 {slides.map((slide, index) => (
-                <div className="slide" style={{backgroundImage:`url(${slide.img})`}}>
+                <div key={index} className="slide" style={{backgroundImage:`url(${slide.img})`}}>
                     <div className="slidecontent">
-                        <div className="leftarrow">&#60;</div>
+                        <div className="leftarrow" onClick={
+                            () => {setIndex(index - 1)}}>&#60;</div>
                         <div>
                             <h2>{slide.title}</h2>
                             <h3>{slide.info}</h3>
                             <Link to="/about" className="slidelink">{slide.linkText}</Link>
                         </div>
-                        <div className="rightarrow">&#62;</div>
+                        <div className="rightarrow" onClick={() => {setIndex(index + 1)}}>&#62;</div>
                     </div>
                 </div>
                 ))}
