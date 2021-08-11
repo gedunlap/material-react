@@ -54,13 +54,26 @@ function SlideShow(props){
                 <div key={index} className="slide" style={{backgroundImage:`url(${slide.img})`}}>
                     <div className="slidecontent">
                         <div className="leftarrow" onClick={
-                            () => {setIndex(index - 1)}}>&#60;</div>
+                            () => {
+                                if(index > 0) {
+                                    setIndex(index - 1)
+                                } else {
+                                    setIndex(slides.length - 1)
+                                }
+                            }}>&#60;</div>
                         <div>
                             <h2>{slide.title}</h2>
                             <h3>{slide.info}</h3>
                             <Link to="/about" className="slidelink">{slide.linkText}</Link>
                         </div>
-                        <div className="rightarrow" onClick={() => {setIndex(index + 1)}}>&#62;</div>
+                        <div className="rightarrow" onClick={
+                            () => {
+                                if(index < slides.length - 1) {
+                                    setIndex(index + 1)
+                                } else {
+                                    setIndex(0)
+                                }
+                            }}>&#62;</div>
                     </div>
                 </div>
                 ))}
