@@ -44,7 +44,7 @@ body {
 
     .navitem {
         text-decoration: none;
-        font-size: 20px;
+        font-size: 15px;
         color: black;
     }
 
@@ -59,7 +59,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // border: solid;
+    border: solid hotpink;
 
     h1 {
         color: black;
@@ -109,11 +109,14 @@ body {
 
                     .rightarrow, .leftarrow {
                         font-size: 30px;
-                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        padding: 20px;
                     }
 
                     .rightarrow:hover, .leftarrow:hover {
-                        background-color: rgb(211, 211, 211, 0.3);
+                        background-color: rgb(211, 211, 211, 0.5);
                     }
 
                     .slidelink {

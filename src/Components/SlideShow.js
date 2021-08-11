@@ -20,7 +20,7 @@ const slides = [
     }
 ]
 
-const delay = 20000
+const delay = 60000
 
 function SlideShow(props){
 
