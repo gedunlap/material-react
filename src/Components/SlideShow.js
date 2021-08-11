@@ -8,9 +8,9 @@ const slides = [
         info: "there will be another slide too",
     },
     {
-        img: "https://i.imgur.com/USbENtF.jpg",
+        img: "https://i.imgur.com/ihM5BwT.jpg",
         title: "This is the second slide",
-        info: "there will be one more slide",
+        info: "click the link for the about page",
         linkText: "LEARN MORE --->"
     },
     {
