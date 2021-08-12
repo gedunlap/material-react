@@ -185,3 +185,18 @@ body {
     }
     
 }
+
+.homeig {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: white;
+
+    .ig {
+        text-align: center;
+        width: 20%;
+        height: 100px;
+        margin: 10px;
+        background-color: black;
+    }
+}

@@ -16,6 +16,14 @@ function Home(props){
           <div className="t4"><p>1601 N Franklin St, Tampa, FL 33602</p></div>
           <div className="t6">Monday-Friday: 9am-8pm | Saturday: 9am-5pm | Sunday: 10am-5pm</div>
         </div>
+        <div className="homeig">
+          <div className="ig">1</div>
+          <div className="ig">2</div>
+          <div className="ig">3</div>
+          <div className="ig">4</div>
+          <div className="ig">5</div>
+          <div className="ig">6</div>
+        </div>
       </div>
     )
   }
