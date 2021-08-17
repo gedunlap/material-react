@@ -14,7 +14,7 @@ function Home(props){
           <Link to="/about"><button>LEARN MORE</button></Link>
           <div className="breakline"></div>
           <div className="t4"><p>1601 N Franklin St, Tampa, FL 33602</p></div>
-          <div className="t6">Monday-Friday: 9am-8pm | Saturday: 9am-5pm | Sunday: 10am-5pm</div>
+          <div className="t5">Monday-Friday: 9am-8pm | Saturday: 9am-5pm | Sunday: 10am-5pm</div>
         </div>
         <div className="homeig">
           <div className="ig">1</div>

@@ -1,4 +1,5 @@
 body {
+    font-family: Helvetica;
     padding: 5%;
     margin: 0;
 }
@@ -63,6 +64,7 @@ body {
         flex-wrap: wrap;
         text-align: center;
         padding: 50px 100px;
+        font-weight: 100;
 
         .t1 {
             font-size: 50px;
@@ -94,6 +96,11 @@ body {
         .t4 {
             display: inline-block;
             margin: 10px 0;
+            font-family: 'IBM Plex Mono', monospace;
+        }
+
+        .t5 {
+            font-family: 'IBM Plex Mono', monospace;
         }
     }
 }
