@@ -1,5 +1,9 @@
 function About(props){
-    return <h1>About</h1>
+    return (
+      <div className="about">
+        <h1>About</h1>
+      </div>
+    )
   } 
   
   export default About

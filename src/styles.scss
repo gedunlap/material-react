@@ -105,12 +105,7 @@ body {
     }
 }
 
-.locationpg {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .slidebox {
     height: 100%;
@@ -172,8 +167,70 @@ body {
     }
 }
 
+.homeig {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: white;
 
-@media only screen and (max-width: 600px) {
+    .ig {
+        text-align: center;
+        width: 20%;
+        height: 100px;
+        margin: 10px;
+        background-color: black;
+    }
+}
+
+.about {
+    font-family: Helvetica;
+    text-align: center;
+
+    h1 {
+        font-size: 75px;
+    }
+}
+
+.locationpg {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .locationinfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            max-width: 400px;
+            margin: 50px;
+            font-weight: 300;
+            font-family: Helvetica;
+        }
+
+        img {
+            max-width: 400px;
+            max-height: auto;
+            margin: 50px;
+            border: solid black 5px;
+            border-radius: 255px;
+        }
+    }
+
+    .locationmap {
+        width: 100%;
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            margin: 50px 0 100px 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
     .homepg {
         .hometext {
             width: 90vw;
@@ -190,20 +247,24 @@ body {
             }
         }
     }
-    
-}
 
-.homeig {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    color: white;
-
-    .ig {
+    .locationinfo {
+        flex-direction: column;
         text-align: center;
-        width: 20%;
-        height: 100px;
-        margin: 10px;
-        background-color: black;
+
+        img {
+            margin: 0px;
+            width: 300px;
+        }
+
+        h3 {
+            margin: 0px;
+        }
+    }
+
+    .locationmap {
+        iframe {
+            max-height: 300px;
+        }
     }
 }
